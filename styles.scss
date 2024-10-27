@@ -1,12 +1,23 @@
-.headContain {
+.headContainer {
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  background: rgb(255, 0, 242);
+  background: rgb(23, 26, 36);
 }
 
-.navBar {
+.navContainer {
   width: 100%;
+  display: flex;
+  flex-direction: row;
   background: rgb(0, 162, 255);
+}
+
+.logoContainer {
+  width:40%;
+  justify-content: start;
+}
+
+.navText {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
 }
