@@ -1,23 +1,252 @@
+  //--------------\\
+ // HEADER STYLES \\
+//------------------\\
+
+// Header, Nav and Logo, CTA \\
+
 .headContainer {
   width: 100%;
   height: 100vh;
-  background: rgb(23, 26, 36);
+  background: rgb(29, 28, 28);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .navContainer {
   width: 100%;
+  height: 6rem;
+  background: rgb(32, 24, 21);
   display: flex;
   flex-direction: row;
-  background: rgb(0, 162, 255);
+  border-bottom: 0.5px solid rgb(70, 51, 40);
+  justify-content: center;
+  align-items: center;
 }
 
 .logoContainer {
   width:40%;
+  padding: 0.875rem;
+  display: flex;
+  flex-direction: row;
   justify-content: start;
 }
 
-.navText {
-  width: 20%;
+.navTextContainer {
+  width: 50%;
+  padding: 0.875rem;
   display: flex;
   flex-direction: row;
+  justify-content: end;
+}
+
+.navText, .logoText {
+  font-size: 1.2rem;
+  color: rgb(175, 158, 137);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin: auto 3rem;
+}
+
+.navText:hover {
+  z-index: 1;
+  border-bottom: 2px solid bisque;
+}
+
+.logoText {
+  font-size: 2.75rem;
+  margin: auto 1rem;
+}
+
+.coffeeIcon, .scissorIcon {
+  position: relative;
+  font-size: 3rem;
+  color: rgb(102, 80, 54);
+  text-shadow: 0.05rem 0.03rem 0rem bisque;
+}
+
+.scissorIcon {
+  font-size: 2.5rem;
+  color: rgb(156, 118, 84);
+  transform: rotate(-35deg);
+  left: 1rem;
+  z-index: 1;
+}
+
+  //--------------\\
+ // SECTION STYLES \\
+//------------------\\
+
+// Header CTA \\
+.headCTA {
+  height: 90vh;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(78, 65, 47);
+  background: url("https://images.pexels.com/photos/7518699/pexels-photo-7518699.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: bisque;
+  text-shadow: -0.2rem 0.2rem 0rem rgb(78, 58, 50);
+}
+
+.ctaButton {
+  width: 10rem;
+  height: 4rem;
+  margin: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  border: 0;
+  background-color: rgb(78, 58, 50);
+  color: bisque;
+}
+
+// Hairstyles \\
+
+.hairStyles {
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+}
+
+.styleOne, .styleTwo, .styleThree, .styleFour, .styleFive, .styleSix {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.hairImgs {
+  columns: 500px;
+}
+
+.hairstyleText {
+  padding: 3rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(95, 71, 62);
+}
+
+// Drinks and Hairstyles Pricing Tables \\
+
+.priceListSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: bisque;
+}
+
+.drinksMenu, .styleMenu {
+  width: 30%;
+  margin: 2.5rem;
+  justify-items: center;
+  font-size: 2rem;
+}
+
+.head3 {
+  font-size: 3rem;
+  color: rgb(95, 71, 62);
+  padding-bottom: 2rem;
+}
+
+.drinksMenuTable, .styleMenuTable {
+  width: 100%;
+  padding: 1rem;
+  overflow: auto;
+  border-spacing: 0;
+  border: 1px solid rgb(95, 71, 62);
+}
+
+table tbody tr:first-child {
+  background-color: rgb(95, 71, 62);
+  color: bisque;
+}
+
+table tbody tr th {
+  padding: 0.5rem;
+}
+
+table tbody tr th:nth-child(2), table tbody tr td {
+  padding: 0.5rem;
+}
+
+table tbody tr td:last-child {
+  text-align: center;
+}
+
+.buttContain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+// Reviews and Testimonials \\
+
+.topReviews {
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  text-align: center;
+  font-size: 1.75rem;
+  padding: 3rem;
+}
+
+.topReviews img {
+  width: 15rem;
+  height: 15rem;
+  background-color: rgb(99, 83, 64);
+  border-radius: 100%;
+}
+
+.topReviews div {
+  padding: 2.5rem;
+}
+
+.topReviews p {
+  width: 75%;
+  text-wrap: wrap;
+}
+
+.rev1 {
+  justify-items: left;
+}
+
+.rev2 {
+  justify-items: right;
+}
+// Footer and Links \\
+
+.foot {
+  width: 100%;
+  height: 25vh;
+  background: rgb(32, 24, 21);
+  color: bisque;
+  font-size: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footNav {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 8rem;
+}
+
+.footDesc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
