@@ -36,7 +36,7 @@
 
 .navText, .logoText {
   font-size: 1.2rem;
-  color: rgb(175, 158, 137);
+  color: bisque;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   margin: auto 3rem;
@@ -182,7 +182,6 @@ table tbody tr td:last-child {
 .topReviews {
   width: 100%;
   background-color: rgb(243, 243, 243);
-  text-align: center;
   font-size: 1.75rem;
   padding: 3rem;
 }
@@ -195,20 +194,23 @@ table tbody tr td:last-child {
 }
 
 .topReviews div {
-  padding: 2.5rem;
+  padding: 0 10rem 0 10rem;
 }
 
 .topReviews p {
   width: 75%;
   text-wrap: wrap;
+  color: rgb(63, 49, 33);
 }
 
 .rev1 {
   justify-items: left;
+  text-align: left;
 }
 
 .rev2 {
   justify-items: right;
+  text-align: right;
 }
 
 .foot {
