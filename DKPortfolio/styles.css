@@ -1,1 +1,40 @@
-/*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+.appContainer {
+  width: 100%;
+  display: flex column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.headerContainer {
+  height: 100vh;
+}
+.headerContainer .headerContainer, .headerContainer .middleContainer, .headerContainer .getInTouch, .headerContainer .footerContainer {
+  width: 100%;
+  margin: 1rem;
+}
+
+.logoHead h1:first-child {
+  font-family: "Anton", sans-serif;
+  font-size: 10rem;
+}
+
+.logoHead h1:last-child {
+  font-family: "Rock Salt", cursive;
+  font-size: 4rem;
+}
+
+.ctaWelcome {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: end;
+  background-color: #235445;
+}
+
+.ctaWelcome h1 {
+  font-family: "Bungee Hairline", sans-serif;
+  font-size: 4rem;
+}/*# sourceMappingURL=styles.css.map */
