@@ -33,9 +33,8 @@ while True:
         print(f"You got it, the number was {user_guess}!")
         break
     elif user_guess > randNum:
-            print("Lower!")
-        else:
-            print("Higher!")
+        print("Lower!")
+    else:
+        print("Higher!")
             
-print(f"You got it in {guesses} tries!")
-    
+print(f"Congratulations, you got it in {guesses} tries!")
